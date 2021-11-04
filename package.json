@@ -1,13 +1,13 @@
 {
-  "name": "evobot",
-  "version": "0.15.2",
-  "description": "Discord music bot built with discord.js",
+  "name": "Saturn",
+  "version": "0.0.1",
+  "description": "Discord bot built with discord.js",
   "main": "index.js",
-  "author": "Erit Islami <eritislami@gmail.com>",
+  "author": "Valandil <luisc.souzamuniz@gmail.com>",
   "private": true,
-  "homepage": "https://github.com/eritislami/evobot",
-  "repository": "github:eritislami/evobot",
-  "bugs": "https://github.com/eritislami/evobot/issues",
+  "homepage": "https://github.com/luiscsmuniz/saturn",
+  "repository": "github:luiscsmuniz/saturn",
+  "bugs": "https://github.com/luiscsmuniz/saturn/issues",
   "engines": {
     "node": ">=14.0.0"
   },

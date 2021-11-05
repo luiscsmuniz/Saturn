@@ -1,14 +1,36 @@
 {
-  "help": {
-    "description": "Mostra todos os comandos e descrições.",
-    "embedTitle": "{botname} Ajuda",
-    "embedDescription": "Lista de todos os comandos."
+	"help": {
+		"description": "Mostra todos os comandos e descrições.",
+		"embedTitle": "{botname} Ajuda",
+		"embedDescription": "Lista de todos os comandos."
+	},
+	"invite": {
+		"description": "Envia o link de convite do bot."
+	},
+	"ping": {
+		"description": "Mostra o ping médio do bot.",
+		"result": "📈 Ping médio da API: {ping} ms"
+	},
+	"raffle": {
+		"description": "Sorteia prêmios para os membros do servidor",
+    "title": "Sorteio",
+    "embedDescription": "Prêmio: {prize}",
+    "prizeIsNull": ":x: Faltou digitar o prêmio",
+    "expiredTime": "Tempo para pegar tickets esgotado :timer:",
+    "noParticipantsFound": "Nenhum participante encontrado",
+    "winner": "O vencedor é {winner}"
+	},
+  "errors" : {
+    "invalidCommand": ":x: comando inválido",
+    "onlyMods": ":x: Somente moderadores podem executar esse comando :x:"
   },
-  "invite": {
-    "description": "Envia o link de convite do bot."
+  "messages": {
+    "expiresIn": "Expira em {time} {unitOfTime}"
   },
-  "ping": {
-    "description": "Mostra o ping médio do bot.",
-    "result": "📈 Ping médio da API: {ping} ms"
+  "unitOfTime": {
+    "second": "segundo",
+    "seconds": "segundos",
+    "hora": "hora",
+    "horas": "horas"
   }
 }

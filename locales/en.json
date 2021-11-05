@@ -1,14 +1,17 @@
 {
-  "help": {
-    "description": "Display all commands and descriptions",
-    "embedTitle": "{botname} Help",
-    "embedDescription": "List of all commands"
-  },
-  "invite": {
-    "description": "Send bot invite link"
-  },
-  "ping": {
-    "description": "Show the bot's average ping",
-    "result": "📈 Average ping to API: {ping} ms"
-  }
+	"help": {
+		"description": "Display all commands and descriptions",
+		"embedTitle": "{botname} Help",
+		"embedDescription": "List of all commands"
+	},
+	"invite": {
+		"description": "Send bot invite link"
+	},
+	"ping": {
+		"description": "Show the bot's average ping",
+		"result": "📈 Average ping to API: {ping} ms"
+	},
+	"raffle": {
+		"description": "raffle.description"
+	}
 }

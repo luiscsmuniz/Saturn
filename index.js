@@ -8,7 +8,6 @@ const { TOKEN, PREFIX } = require("./util/Util");
 const i18n = require("./util/i18n");
 
 const client = new Client({
-  disableMentions: "everyone",
   restTimeOffset: 0
 });
 

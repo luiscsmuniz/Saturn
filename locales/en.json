@@ -13,5 +13,14 @@
 	},
 	"raffle": {
 		"description": "raffle.description"
+	},
+	"common": {
+		"errorCommand": "common.errorCommand"
+	},
+	"avatar": {
+		"description": "avatar.description"
+	},
+	"prefix": {
+		"description": "prefix.description"
 	}
 }

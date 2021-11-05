@@ -1,12 +1,16 @@
 const { MessageEmbed } = require("discord.js");
 const i18n = require("../util/i18n");
+const Connect = require("../util/database");
+
+const connect = new Connect
 
 module.exports = {
   name: "help",
   aliases: ["h"],
   description: i18n.__("help.description"),
-  execute(message) {
+  async execute(message) {
     let commands = message.client.commands.array();
+    let prefix = await connect.show(`${message.guild.id}_prefix`) 
 
     let helpEmbed = new MessageEmbed()
       .setTitle(i18n.__mf("help.embedTitle", { botname: message.client.user.username }))
@@ -15,7 +19,7 @@ module.exports = {
 
     commands.forEach((cmd) => {
       helpEmbed.addField(
-        `**${message.client.prefix}${cmd.name} ${cmd.aliases ? `(${cmd.aliases})` : ""}**`,
+        `**${prefix || message.client.prefix}${cmd.name} ${cmd.aliases ? `(${cmd.aliases})` : ""}**`,
         `${cmd.description}`,
         true
       );

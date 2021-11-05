@@ -7,6 +7,9 @@ const { join } = require("path");
 const { TOKEN, PREFIX } = require("./util/Util");
 const i18n = require("./util/i18n");
 
+const Connect = require("./util/database");
+const connect = new Connect
+
 const client = new Client({
   restTimeOffset: 0
 });
@@ -41,7 +44,9 @@ client.on("message", async (message) => {
   if (message.author.bot) return;
   if (!message.guild) return;
 
-  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(PREFIX)})\\s*`);
+  const serverPrefix = await connect.show(`${message.guild.id}_prefix`)
+
+  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(serverPrefix || PREFIX)})\\s*`);
   if (!prefixRegex.test(message.content)) return;
 
   const [, matchedPrefix] = message.content.match(prefixRegex);
@@ -81,6 +86,6 @@ client.on("message", async (message) => {
     command.execute(message, args);
   } catch (error) {
     console.error(error);
-    message.reply(i18n.__("common.errorCommand")).catch(console.error);
+    message.reply(i18n.__("errors.oops")).catch(console.error);
   }
 });

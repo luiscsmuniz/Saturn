@@ -10,7 +10,9 @@ module.exports = {
   description: i18n.__("help.description"),
   async execute(message) {
     let commands = message.client.commands.array();
-    let prefix = await connect.show(`${message.guild.id}_prefix`) 
+    let prefix = await connect.show(`${message.guild.id}_prefix`)
+
+    console.log(commands)
 
     let helpEmbed = new MessageEmbed()
       .setTitle(i18n.__mf("help.embedTitle", { botname: message.client.user.username }))
@@ -20,7 +22,7 @@ module.exports = {
     commands.forEach((cmd) => {
       helpEmbed.addField(
         `**${prefix || message.client.prefix}${cmd.name} ${cmd.aliases ? `(${cmd.aliases})` : ""}**`,
-        `${cmd.description}`,
+        `${i18n.__(`${cmd.name}.description`)}`,
         true
       );
     });

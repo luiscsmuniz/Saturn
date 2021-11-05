@@ -7,7 +7,9 @@ module.exports = {
   name: "prefix",
   description: i18n.__("prefix.description"),
   async execute(message, args) {
-    if (message.member.hasPermission("ADMINISTRATOR") || message.member.roles.cache.some(role => role.name === '⚔️Mod')) {
+    mods = await connect.show(`${message.guild.id}_mods`) || []
+
+    if (message.member.hasPermission("ADMINISTRATOR") || message.member.roles.cache.some(role => mods.includes(role.id))) {
       if (!args[0]) return message.channel.send(i18n.__('prefix.prefixIsNull'))
 
       if (await connect.insert(`${message.guild.id}_prefix`, args[0])) return message.channel.send(i18n.__('prefix.save'))

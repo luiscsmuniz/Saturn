@@ -26,6 +26,7 @@
 	"errors": {
 		"invalidCommand": ":x: comando inválido",
 		"onlyMods": ":x: Somente moderadores podem executar esse comando :x:",
+		"onlyAdmin": ":x: Somente adminstrador podem executar esse comando :x:",
 		"oops": "Oops... alguma coisa deu errado"
 	},
 	"messages": {
@@ -42,16 +43,27 @@
 		"prefixIsNull": ":x: Faltou digitar o prefixo",
 		"save": ":white_check_mark: prefixo salvo"
 	},
-  "uptime": {
-    "description": "Verifica o tempo ativo",
-    "result": "Tempo online: `{days} dia(s),{hours} hora(s), {minutes} minuto(s), {seconds} segundo(s)`"
-  },
+	"uptime": {
+		"description": "Verifica o tempo ativo",
+		"result": "Tempo online: `{days} dia(s),{hours} hora(s), {minutes} minuto(s), {seconds} segundo(s)`"
+	},
+	"setmod": {
+		"description": "Seta cargos para moderar o bot.",
+		"modIsNull": ":x: Faltou mencionar os cargos",
+		"save": ":white_check_mark: adicionado moderador(es)"
+	},
+	"locale": {
+		"description": "Seta o idioma do bot.",
+		"localeIsNull": ":x: Faltou digitar o idioma (en | pt_br)",
+		"invalidLocale": ":x: Idioma inválido (en | pt_br)",
+		"save": ":white_check_mark: idioma alterado"
+	},
 	"common": {
-    "on": "**ligado**",
-    "off": "**desligado**",
-    "enabled": "**ativado**",
-    "disabled": "**desativado**",
-    "errorNotChannel": "Você precisa entrar em um canal de voz primeiro!",
-    "cooldownMessage": "Por favor espere {time} segundo(s) mais antes de usar o comando `{name}` novamente."
-  }
+		"on": "**ligado**",
+		"off": "**desligado**",
+		"enabled": "**ativado**",
+		"disabled": "**desativado**",
+		"errorNotChannel": "Você precisa entrar em um canal de voz primeiro!",
+		"cooldownMessage": "Por favor espere {time} segundo(s) mais antes de usar o comando `{name}` novamente."
+	}
 }

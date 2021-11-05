@@ -4,7 +4,7 @@
 const { Client, Collection } = require("discord.js");
 const { readdirSync } = require("fs");
 const { join } = require("path");
-const { TOKEN, PREFIX } = require("./util/Util");
+const { TOKEN, PREFIX, LOCALE } = require("./util/Util");
 const i18n = require("./util/i18n");
 
 const Connect = require("./util/database");
@@ -43,6 +43,8 @@ for (const file of commandFiles) {
 client.on("message", async (message) => {
   if (message.author.bot) return;
   if (!message.guild) return;
+
+  i18n.setLocale(await connect.show(`${message.guild.id}_locale`) || LOCALE);
 
   const serverPrefix = await connect.show(`${message.guild.id}_prefix`)
 

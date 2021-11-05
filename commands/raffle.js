@@ -1,12 +1,17 @@
 const i18n = require("../util/i18n");
 const Discord = require("discord.js");
 const { BOT_IMAGE } = require("../util/Util");
+const Connect = require("../util/database");
+
+const connect = new Connect
 
 module.exports = {
   name: "raffle",
   description: i18n.__("raffle.description"),
   async execute(message, args) {
-    if (message.member.hasPermission("ADMINISTRATOR") || message.member.roles.cache.some(role => role.name === '⚔️Mod')) {
+    mods = await connect.show(`${message.guild.id}_mods`) || []
+
+    if (message.member.hasPermission("ADMINISTRATOR") || message.member.roles.cache.some(role => mods.includes(role.id))) {
     const time = args[0]
     const prize = args.filter(item => item != args[0]).join(' ')
 

@@ -6,5 +6,8 @@
   "RANDOM_PHRASHES_API": "",
   "RCON_PASSWORD": "",
   "RCON_PORT": "",
-  "MINECRAFT_SERVER_URL":""
+  "MINECRAFT_SERVER_URL":"",
+  "WEBHOOKID": "",
+  "WEBHOOKTOKEN": "",
+  "BOTNAME": ""
 }

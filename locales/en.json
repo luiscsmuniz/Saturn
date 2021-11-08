@@ -1,69 +1,84 @@
 {
-  "avatar": {
-    "description": "Shows the avatar of the mentioned member."
-  },
-  "help": {
-    "description": "Shows all commands and descriptions.",
-    "embedTitle": "{botname} Help",
-    "embedDescription": "List of all commands."
-  },
-  "invite": {
-    "description": "Send the bot's invitation link."
-  },
-  "ping": {
-    "description": "Displays the average ping of the bot.",
-    "result": "📈 Average API Ping: {ping} ms"
-  },
-  "raffle": {
-    "description": "Raffle prizes to server members.",
-    "title": "Raffle",
-    "embedDescription": "Prize: {prize}",
-    "prizeIsNull": ":x: Missed to enter prize",
-    "expiredTime": "Time to get tickets expired :timer:",
-    "noParticipantsFound": "No Participants Found",
-    "winner": "The winner is {winner}"
-  },
-  "errors": {
-    "invalidCommand": ":x: invalid command",
-    "onlyMods": ":x: Only moderators can execute this command :x:",
-    "onlyAdmin": ":x: Only admin can run this command :x:",
-    "oops": "Oops... something went wrong"
-  },
-  "messages": {
-    "expiresIn": "Expires in {time} {unitOfTime}"
-  },
-    "unitOfTime": {
-    "second": "second",
-    "seconds": "seconds",
-    "time": "time",
-    "hours": "hours"
-  },
-  "prefix": {
-    "description": "Set the command prefix.",
-    "prefixIsNull": ":x: Missed to type the prefix",
-    "save": ":white_check_mark: prefix saved"
-  },
-  "uptime": {
-    "description": "Check the active time",
-    "result": "Online time: `{days} day(s),{hours} hour(s), {minutes} minute(s), {seconds} second(s)`"
-  },
-  "setmod": {
-    "description": "Set positions to moderate the bot.",
-    "modIsNull": ":x: Missing mention of positions",
-    "save": ":white_check_mark: added moderator(s)"
-  },
-  "locale": {
-    "description": "Set the language of the bot.",
-    "localeIsNull": ":x: Missing to type the language (en | pt_br)",
-    "invalidLocale": ":x: Invalid language (en | pt_br)",
-    "save": ":white_check_mark: language changed"
-  },
-  "common": {
-    "on": "**on**",
-    "off": "**off**",
-    "enabled": "**enabled**",
-    "disabled": "**disabled**",
-    "errorNotChannel": "You need to join a voice channel first!",
-    "cooldownMessage": "Please wait {time} second(s) more before using the `{name}` command again."
-  }
+	"avatar": {
+		"description": "Shows the avatar of the mentioned member."
+	},
+	"help": {
+		"description": "Shows all commands and descriptions.",
+		"embedTitle": "{botname} Help",
+		"embedDescription": "List of all commands."
+	},
+	"invite": {
+		"description": "Send the bot's invitation link."
+	},
+	"ping": {
+		"description": "Displays the average ping of the bot.",
+		"result": "📈 Average API Ping: {ping} ms"
+	},
+	"raffle": {
+		"description": "Raffle prizes to server members.",
+		"title": "Raffle",
+		"embedDescription": "Prize: {prize}",
+		"prizeIsNull": ":x: Missed to enter prize",
+		"expiredTime": "Time to get tickets expired :timer:",
+		"noParticipantsFound": "No Participants Found",
+		"winner": "The winner is {winner}"
+	},
+	"errors": {
+		"invalidCommand": ":x: invalid command",
+		"onlyMods": ":x: Only moderators can execute this command :x:",
+		"onlyAdmin": ":x: Only admin can run this command :x:",
+		"oops": "Oops... something went wrong"
+	},
+	"messages": {
+		"expiresIn": "Expires in {time} {unitOfTime}"
+	},
+	"unitOfTime": {
+		"second": "second",
+		"seconds": "seconds",
+		"time": "time",
+		"hours": "hours"
+	},
+	"prefix": {
+		"description": "Set the command prefix.",
+		"prefixIsNull": ":x: Missed to type the prefix",
+		"save": ":white_check_mark: prefix saved"
+	},
+	"uptime": {
+		"description": "Check the active time",
+		"result": "Online time: `{days} day(s),{hours} hour(s), {minutes} minute(s), {seconds} second(s)`"
+	},
+	"setmod": {
+		"description": "Set positions to moderate the bot.",
+		"modIsNull": ":x: Missing mention of positions",
+		"save": ":white_check_mark: added moderator(s)"
+	},
+	"locale": {
+		"description": "Set the language of the bot.",
+		"localeIsNull": ":x: Missing to type the language (en | pt_br)",
+		"invalidLocale": ":x: Invalid language (en | pt_br)",
+		"save": ":white_check_mark: language changed"
+	},
+	"common": {
+		"on": "**on**",
+		"off": "**off**",
+		"enabled": "**enabled**",
+		"disabled": "**disabled**",
+		"errorNotChannel": "You need to join a voice channel first!",
+		"cooldownMessage": "Please wait {time} second(s) more before using the `{name}` command again.",
+    "year": "Year",
+    "description": "Description",
+    "noInformation": "No information"
+	},
+	"randomphrase": {
+		"description": "Show a random phrase"
+	},
+	"rpcreate": {
+		"description": "Create a random phrase",
+		"save": ":white_check_mark: Phrase registered successfully",
+		"phraseIsNull": ":x: Enter an interaction phrase"
+	},
+	"searchanime": {
+		"description": "Shows a list of researched animes",
+    "embedDescription": "Anime list"
+	}
 }

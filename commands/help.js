@@ -12,8 +12,6 @@ module.exports = {
     let commands = message.client.commands.array();
     let prefix = await connect.show(`${message.guild.id}_prefix`)
 
-    console.log(commands)
-
     let helpEmbed = new MessageEmbed()
       .setTitle(i18n.__mf("help.embedTitle", { botname: message.client.user.username }))
       .setDescription(i18n.__("help.embedDescription"))

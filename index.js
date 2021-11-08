@@ -6,6 +6,7 @@ const { readdirSync } = require("fs");
 const { join } = require("path");
 const { TOKEN, PREFIX, LOCALE } = require("./util/Util");
 const i18n = require("./util/i18n");
+const keepAlive = require('./server')
 
 const Connect = require("./util/database");
 const connect = new Connect
@@ -85,9 +86,11 @@ client.on("message", async (message) => {
   setTimeout(() => timestamps.delete(message.author.id), cooldownAmount);
 
   try {
-    command.execute(message, args);
+    command.execute(message, args, client);
   } catch (error) {
     console.error(error);
     message.reply(i18n.__("errors.oops")).catch(console.error);
   }
 });
+
+keepAlive()

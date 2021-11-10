@@ -65,9 +65,9 @@
 		"disabled": "**disabled**",
 		"errorNotChannel": "You need to join a voice channel first!",
 		"cooldownMessage": "Please wait {time} second(s) more before using the `{name}` command again.",
-    "year": "Year",
-    "description": "Description",
-    "noInformation": "No information"
+		"year": "Year",
+		"description": "Description",
+		"noInformation": "No information"
 	},
 	"randomphrase": {
 		"description": "Show a random phrase"
@@ -79,6 +79,13 @@
 	},
 	"searchanime": {
 		"description": "Shows a list of researched animes",
-    "embedDescription": "Anime list"
+		"embedDescription": "Anime list"
+	},
+	"fireworks": {
+		"description": "Launches fireworks"
+	},
+	"watchparty": {
+		"description": "Create a watchparty room",
+		"room": "Room: {url}"
 	}
 }

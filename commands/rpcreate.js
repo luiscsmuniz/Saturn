@@ -29,7 +29,7 @@ module.exports = {
         return message.channel.send(i18n.__('rpcreate.save'))
       }
 
-      return message.channel.send(i18n.__('error.oops'))
+      return message.channel.send(i18n.__('errors.oops'))
     }
 
     return message.channel.send(

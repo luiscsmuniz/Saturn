@@ -20,6 +20,7 @@ cron.schedule('30 8 * * *', () => {
     'Bom dia! O sol já nasceu lá na fazendinha :sun_with_face: :cow:',
     '<a:bomdia:902498856678359040>',
     'Bom dia porra!!!',
+    'https://imgur.com/4HzmtS2',
   ]
 
   const webhookClient = new Discord.WebhookClient(WEBHOOKID, WEBHOOKTOKEN);

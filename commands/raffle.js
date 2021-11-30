@@ -44,7 +44,9 @@ module.exports = {
           winner = giveAway.reactions.cache.get('🎟️').users.cache.random().id
         }
 
-        return message.channel.send(i18n.__mf("raffle.winner", { winner: `<@${winner}>` }))
+        return message.channel.send(i18n.__mf("raffle.winner", { winner: `<@${winner}>` }), {
+          tts: true,
+        })
       }, 1000)
     }, time*1000)
 

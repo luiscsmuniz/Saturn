@@ -1,7 +1,7 @@
 const i18n = require("../util/i18n");
 const { parse } = require ('node-html-parser');
 const fetch = require('node-fetch')
-const Discord = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 const { BOT_IMAGE } = require("../util/Util");
 
 module.exports = {
@@ -38,7 +38,7 @@ module.exports = {
 
     if (object.length === 0) return message.channel.send(i18n.__('errors.oops'))
 
-    const animeEmbed = new Discord.MessageEmbed()
+    const animeEmbed = new MessageEmbed()
       .setColor('#0099ff')
       .setTitle(i18n.__('searchanime.embedDescription'))
       .setURL('')

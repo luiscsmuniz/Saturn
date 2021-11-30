@@ -1,0 +1,12 @@
+{
+  "files": {
+    "commands/say.js": [
+      {
+        "id": "3b1109fb-09f5-4b39-8d57-2ad21c9be4fc",
+        "line": 1,
+        "version": 78,
+        "index": 0
+      }
+    ]
+  }
+}

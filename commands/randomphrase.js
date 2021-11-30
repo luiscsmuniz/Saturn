@@ -29,7 +29,7 @@ module.exports = {
       return
     } catch(e) {
       console.log(e)
-      return message.channel.send(i18n.__('error.oops'))
+      return message.channel.send(i18n.__('errors.oops'))
     }
   }
 };

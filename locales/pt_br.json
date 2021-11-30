@@ -65,20 +65,27 @@
 		"disabled": "**desativado**",
 		"errorNotChannel": "Você precisa entrar em um canal de voz primeiro!",
 		"cooldownMessage": "Por favor espere {time} segundo(s) mais antes de usar o comando `{name}` novamente.",
-    "year": "Ano",
-    "description": "Descrição",
-    "noInformation": "Sem informação"
+		"year": "Ano",
+		"description": "Descrição",
+		"noInformation": "Sem informação"
 	},
 	"randomphrase": {
 		"description": "Mostra uma frase aleatória"
 	},
 	"rpcreate": {
 		"description": "Criar uma frase aleatória",
-    "save": ":white_check_mark: Frase cadastrada com sucesso",
+		"save": ":white_check_mark: Frase cadastrada com sucesso",
 		"phraseIsNull": ":x: Digite uma frase de interação"
 	},
-  "searchanime": {
-    "description": "Mostra uma lista de animes pesquisados",
-    "embedDescription": "Lista de animes"
-  }
+	"searchanime": {
+		"description": "Mostra uma lista de animes pesquisados",
+		"embedDescription": "Lista de animes"
+	},
+	"fireworks": {
+		"description": "Lança fogos de artifício"
+	},
+	"watchparty": {
+		"description": "Cria uma sala para watchparty",
+		"room": "Sala: {url}"
+	}
 }

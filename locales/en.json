@@ -81,10 +81,19 @@
 		"description": "Shows a list of researched animes",
 		"embedDescription": "Anime list"
 	},
+<<<<<<< HEAD
 	"meme": {
 		"description": "meme.description"
 	},
 	"say": {
 		"description": "say.description"
+=======
+	"fireworks": {
+		"description": "Launches fireworks"
+	},
+	"watchparty": {
+		"description": "Create a watchparty room",
+		"room": "Room: {url}"
+>>>>>>> origin/master
 	}
 }
